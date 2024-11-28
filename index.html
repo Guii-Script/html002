@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"><!-- Define o idioma da página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Torna a página responsiva-->
+    <title>Aula 2</title> <!-- Título da aba do navegador -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Define a fonte principal como Arial (ou uma fonte padrão sem serifa) */
+            line-height: 1.6;
+            /* Aumenta o espaçamento vertical entre linhas para melhorar a leitura */
+            margin: 20px;
+            /* Adiciona uma margem em volta de todo o conteúdo da página */
+            color: #333;
+            /* Define a cor principal do texto como um cinza escuro */
+        }
+
+        /* Estilização do título principal */
+        h1 {
+            color: #2a9d8f;
+            /* Aplica uma cor verde-azulada ao título */
+            border-bottom: 2px solid #2a9d8f;
+            /* Adiciona uma linha abaixo do título na mesma cor */
+            padding-bottom: 10px;
+            /* Adiciona um espaço abaixo do texto antes da linha */
+        }
+
+        /* Estilização de parágrafos */
+        p {
+            margin: 10px 0;
+            /* Adiciona um espaço de 10px acima e abaixo de cada parágrafo */
+        }
+
+        /* Estilização de texto pré-formatado */
+        pre {
+            background-color: #f4f4f4;
+            /* Define um fundo cinza claro para destacar o bloco */
+            border-left: 5px solid #2a9d8f;
+            /* Adiciona uma borda verde-azulada à esquerda */
+            padding: 10px;
+            /* Adiciona espaçamento interno ao bloco */
+            overflow-x: auto;
+            /* Permite rolagem horizontal caso o conteúdo ultrapasse o limite da tela */
+        }
+
+        /* Estilização de texto de código */
+        code {
+            background-color: #f4f4f4;
+            /* Aplica um fundo cinza claro para destacar o código */
+            padding: 2px 5px;
+            /* Adiciona um pequeno espaçamento ao redor do texto */
+            border-radius: 4px;
+            /* Arredonda levemente os cantos do fundo */
+            font-family: Consolas, monospace;
+            /* Define a fonte como monoespaçada (ideal para código) */
+        }
+
+        /* Estilização para destacar exemplos gerais */
+        .highlight {
+            background-color: #e9f5f2;
+            /* Fundo verde claro para destaque */
+            padding: 10px;
+            /* Adiciona espaçamento interno */
+            border: 1px solid #2a9d8f;
+            /* Adiciona uma borda verde-azulada */
+            border-radius: 5px;
+            /* Arredonda os cantos do bloco */
+            margin: 10px 0;
+            /* Adiciona espaçamento vertical entre os blocos */
+        }
+
+        /* Estilização para exemplos de texto deletado */
+        .deleted {
+            background-color: #ffe8e8;
+            /* Fundo vermelho claro para destacar como texto deletado */
+            border-left: 5px solid #e76f51;
+            /* Borda vermelha à esquerda */
+            padding: 10px;
+            /* Espaçamento interno no bloco */
+            margin: 10px 0;
+            /* Espaçamento vertical */
+        }
+
+        /* Estilização para exemplos de texto inserido */
+        .inserted {
+            background-color: #e8fbe8;
+            /* Fundo verde claro para destacar texto inserido */
+            border-left: 5px solid #2a9d8f;
+            /* Borda verde à esquerda */
+            padding: 10px;
+            /* Espaçamento interno */
+            margin: 10px 0;
+            /* Espaçamento vertical */
+        }
+
+        /* Estilização para exemplo de <mark> */
+        mark {
+            background-color: yellow;
+            /* Destaca o texto com fundo amarelo */
+            padding: 2px 5px;
+        }
+
+        /* Estilização de <small> */
+        small {
+            font-size: 0.8em;
+            /* Reduz o tamanho da fonte */
+            color: #555;
+            /* Aplica uma cor cinza suave */
+        }
+
+        /* Estilização para exemplo de <bdi> */
+        bdi {
+            background-color: #f0f0f0;
+            /* Fundo cinza claro */
+            padding: 2px 4px;
+        }
+
+        /* Estilização de <abbr> */
+        abbr {
+            border-bottom: 1px dotted #333;
+            /* Sublinha as siglas */
+            cursor: help;
+            /* Aparece o cursor de ajuda */
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplos de Formatações HTML 😴</h1>
+
+    <div class="highlight">
+        <!-- Exemplos de formatações básicas -->
+        <p><u>Isso é um texto sublinhado usando a tag <code>&lt;u&gt;</code>.</u></p>
+        <p><em>Isso é texto com ênfase usando a tag <code>&lt;em&gt;</code>.</em></p>
+        <p><strong>Isso é texto forte usando a tag <code>&lt;strong&gt;</code>, destacado em negrito.</strong></p>
+    </div>
+
+    <div class="deleted">
+        <!-- Texto deletado -->
+        <p><del>Isso é texto deletado usando a tag <code>&lt;del&gt;</code>, exibido como riscado.</del></p>
+    </div>
+
+    <div class="inserted">
+        <!-- Texto inserido -->
+        <p><ins>Isso é texto inserido usando a tag <code>&lt;ins&gt;</code>, geralmente sublinhado.</ins></p>
+    </div>
+
+    <div class="highlight">
+        <!-- Texto pré-formatado -->
+        <pre>
+if (a > b) {
+    a = a * 2;
+}
+        </pre>
+    </div>
+
+    <!-- Exemplo de código embutido -->
+    <p>Exemplo de código embutido com a tag: <code>print("Olá, mundo!")</code></p>
+
+    <div class="highlight">
+        <!-- Combinação de estilos -->
+        <p><u><em>Isso é sublinhado e com ênfase ao mesmo tempo!</em></u></p>
+        <p><del><strong>Isso é texto deletado, mas ainda com importância!</strong></del></p>
+    </div>
+
+    <hr> <!-- Linha horizontal para separação -->
+
+    <div class="highlight">
+        <!-- Exemplos adicionais -->
+        <p><code>if (a > b) { a = a * 2; }</code> - Exemplo de código dentro da tag <code>&lt;code&gt;</code>.</p>
+        <p>Potência: 3<sup>2</sup></p> <!-- Expoente -->
+        <p>Fórmula: H<sub>2</sub>O</p> <!-- Subscrito -->
+        <p>Símbolos: &reg; &copy;</p> <!-- Símbolos registrados e copyright -->
+        <p>Se eu quiser mostrar uma tag de quebra de linha, uso <code>&lt;br&gt;</code>.</p>
+        <p>Exemplo de emoji: &#x1F596; &#x1F913;</p> <!-- Emojis -->
+
+        <!-- Exemplos das novas tags -->
+        <p>
+            Este texto contém uma <mark>palavra destacada</mark> usando a tag <code>&lt;mark&gt;</code>.
+        </p>
+        <p>
+            Este é um texto padrão. <small>Este texto menor foi inserido com a tag <code>&lt;small&gt;</code>.</small>
+        </p>
+        <p>
+            Aqui está um exemplo de texto com leitura reversa:
+            <bdi dir="rtl">ابجدية</bdi>.
+        </p>
+        <blockquote>
+            "Esta é uma citação de exemplo."
+        </blockquote>
+        <p>
+            A sigla <abbr title="World Wide Web">WWW</abbr> representa a "World Wide Web".
+        </p>
+        <p title="VOCÊ">
+            Passe o cursor sobre este texto para ver o atributo de título "VOCÊ".
+        </p>
+    </div>
+    <div class="deleted">
+        <h2>Links</h2>
+        <a href="pagina.html">Click Aqui</a><br>
+        <a href="https://sp.senac.br/americana">Senac Americana</a><br><br>
+        <a href="https://github.com/Guii-Script">
+            <img src="imagens/sukuna.jpg" width="500">
+        </a>
+    </div>
+</body>
+
+</html>
